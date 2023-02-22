@@ -3,7 +3,7 @@ import xlsxwriter
 from extract import Paragraph
  
 def write_to_excel(filename, comments: list[Paragraph] ):
-    excel_filename = filename.replace('.docx', '.xlsx')
+    excel_filename = filename.replace('.docx', '-comments.xlsx')
     workbook = xlsxwriter.Workbook(excel_filename)
     
     worksheet = workbook.add_worksheet('Comments')

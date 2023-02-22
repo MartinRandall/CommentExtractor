@@ -14,6 +14,3 @@ for root, dirs, files in os.walk("."):
             doc = os.path.join(root, file)
             print("Processing: " + doc)
             process_document(doc)
-
-# document="test2.docx"  #filepath for the input document
-# process_document(document)
